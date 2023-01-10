@@ -25,15 +25,41 @@
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Shell Game</h1>
+        </header>
 
-    <main>
+        <main>
+            <section class="hiding-places">
+                <div id="shell1-section" class="hiding-place">
+                    <img class="show" id="shell1-image" src="./assets/shell.png" />
+                    <img class="pearl-img" src="./assets/pearl.png"/>
+                </div>
+                <div id="shell2-section" class="hiding-place">
+                    <img class="show" id="shell2-image" src="./assets/shell.png" />
+                    <img class="pearl-img" src="./assets/pearl.png"/>
+                </div>
+                <div id="shell3-section" class="hiding-place">
+                    <img class="show" id="shell3-image" src="./assets/shell.png" />
+                    <img class="pearl-img" src="./assets/pearl.png"/>
+                </div>
+            </section>
+            <section class="buttons">
+                <div>
+                    <button id="shell1-button">Guess</button>
+                    <button id="shell2-button">Guess</button>
+                    <button id="shell3-button">Guess</button>
+                </div>
+            </section>
 
-    </main>
-
-</body>
+            <section class="guesses-container">
+                <h3>Wins:<span id="correct-guesses">0</span></h3>
+                <h3>Losses:<span id="incorrect-guesses">0</span></h3>
+                <h3>Total:<span id="total-guesses">0</span></h3>
+            </section>
+            <div>
+        </main>
+    </body>
 
 </html>

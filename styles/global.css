@@ -32,4 +32,60 @@ header .logo {
 
 main {
     padding: 20px;
+    background-image: url(../assets/background.jpg);
 }
+
+.hiding-places {
+    display: flex;
+    justify-content: center;
+}
+
+.hiding-place {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.show {
+    z-index: 20;
+}
+
+.pearl-img {
+    width: 40px;
+    position: absolute;
+    z-index: 10;
+    top: 120px;
+    left: 80px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#shell1-button {
+    margin-right: 240px;
+}
+
+#shell2-button {
+    margin-right: 240px;
+}
+
+.guesses-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+
+
+/* .pearl::after {
+    font-size: 3rem;
+    position: absolute;
+    content: '⚪';
+    /* background-image: url(../assets/pearl.png); */
+    /* z-index: 30; */
+/* } */
