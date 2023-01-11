@@ -49,16 +49,18 @@ main {
     position: relative;
 }
 
-.show {
-    z-index: 20;
-}
 
 .pearl-img {
+    display: block;
     width: 40px;
     position: absolute;
     z-index: 10;
     top: 120px;
     left: 80px;
+}
+
+.hide {
+    display: none;
 }
 
 .buttons {

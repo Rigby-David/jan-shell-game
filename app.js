@@ -12,9 +12,9 @@ const correctGuessesEl = document.getElementById('correct-guesses');
 const incorrectGuessesEl = document.getElementById('incorrect-guesses');
 const totalGuessesEl = document.getElementById('total-guesses');
 
-const shellImageOne = document.getElementById('shell1-image');
-const shellImageTwo = document.getElementById('shell2-image');
-const shellImageThree = document.getElementById('shell3-image');
+const pearlImageOne = document.getElementById('pearl-img1');
+const pearlImageTwo = document.getElementById('pearl-img2');
+const pearlImageThree = document.getElementById('pearl-img3');
 
 /* State */
 let wins = 0;
@@ -60,15 +60,15 @@ function handleGuess(userGuess, correctPlace) {
     incorrectGuessesEl.textContent = losses;
     totalGuessesEl.textContent = total;
 
-    const correctSection = document.getElementById(`${correctPlace}-image`);
+    const correctSection = document.getElementById(`pearl-img${correctPlace.slice(-1)}`);
 
-    correctSection.classList.remove('show');
+    correctSection.classList.remove('hide');
 }
 
 function addClasses() {
-    shellImageOne.classList.add('show');
-    shellImageTwo.classList.add('show');
-    shellImageThree.classList.add('show');
+    pearlImageOne.classList.add('hide');
+    pearlImageTwo.classList.add('hide');
+    pearlImageThree.classList.add('hide');
 }
 /* Display Functions */
 
